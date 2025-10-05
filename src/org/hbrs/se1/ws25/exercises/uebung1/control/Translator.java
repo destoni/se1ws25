@@ -5,11 +5,12 @@ package org.hbrs.se1.ws25.exercises.uebung1.control;
  * und darf NICHT erweitert werden. Sichtbarkeiten koennen
  * unter Umstaenden angepasst werden.
  *
- * @author saschaalda
+ * @author aszumn2s
  *
  */
 
-interface Translator {
+//musste auf public geändert werden
+public interface Translator {
 	
 	double version = 1.0; // Version des Interface
 	

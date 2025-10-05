@@ -4,13 +4,24 @@ public class GermanTranslator implements Translator {
 
 	public String date = "Okt/2025"; // Default-Wert
 
+    private static final String[] numbers = {
+      "","eins","zwei","drei","vier","fünf","sechs","sieben","acht","neun","zehn"
+    };
+
+
+
+    // Wenn number außerhalb des Bereichs 1–10 ist, fliegt eine ArrayIndexOutOfBoundsException,
+    // die abgefangen wird → Fehlermeldung wird zurückgegeben.
 	/**
 	 * Methode zur Übersetzung einer Zahl in eine String-Repraesentation
 	 */
 	 public String translateNumber(int number) {
-		// [ihr Source Code aus Übung 1-2]
-
-		return "null";
+		try{
+            return numbers[number];
+        } catch(ArrayIndexOutOfBoundsException e){
+            return "übersetzung der Zahl: " + number +
+                    "nicht möglich (Version: "+version+")";
+        }
 	}
     //Test 1234
 	/**
