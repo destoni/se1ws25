@@ -13,7 +13,7 @@ public class GermanTranslator implements Translator {
     // Wenn number außerhalb des Bereichs 1–10 ist, fliegt eine ArrayIndexOutOfBoundsException,
     // die abgefangen wird → Fehlermeldung wird zurückgegeben.
 	/**
-	 * Methode zur Übersetzung einer Zahl in eine String-Repraesentation
+	 * Methode zur Übersetzung einer Zahl in eine String-Repraesentationnn
 	 */
 	 public String translateNumber(int number) {
 		try{
@@ -23,6 +23,7 @@ public class GermanTranslator implements Translator {
                     "nicht möglich (Version: "+version+")";
         }
 	}
+
     //Test 1234
 	/**
 	 * Objektmethode der Klasse GermanTranslator zur Ausgabe einer Info.
