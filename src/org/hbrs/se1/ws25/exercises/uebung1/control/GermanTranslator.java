@@ -12,7 +12,7 @@ public class GermanTranslator implements Translator {
 
 		return "null";
 	}
-
+    //Test 1234
 	/**
 	 * Objektmethode der Klasse GermanTranslator zur Ausgabe einer Info.
 	 */
